@@ -7,10 +7,10 @@ import MobileDrawer from './MobileDrawer';
 const CTA = 'Contactáme';
 
 const data = [
-	{ label: 'Inicio' },
-	{ label: 'Proyectos' },
-	{ label: 'Blog' },
-	{ label: 'Sobre mí' },
+	{ label: 'Inicio', href: '' },
+	{ label: 'Proyectos', href: 'projects'},
+	{ label: 'Blog', href: 'blog' },
+	{ label: 'Sobre mí', href: 'about' },
 ];
 
 export default function Header() {
@@ -20,7 +20,7 @@ export default function Header() {
 				<Image src={Logo.src} h="50px" alt="logo" />
 				<HStack as="nav" spacing="5"  display={{ base: "none", md: "flex" }}>
 					{data.map((item, i) => (
-						<Link key={i} href={`/${item.label}`}>
+						<Link key={i} href={`/${item.href}`}>
 							<Button
 								borderRadius={0}
 								variant="nav"
