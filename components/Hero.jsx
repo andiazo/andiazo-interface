@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Heading, SimpleGrid, Center } from '@chakra-ui/react';
 import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image';
 
 const Hero = () => {
 	return (
@@ -39,7 +40,12 @@ const Hero = () => {
 				</Box>
 			</Center>
 			<Center>
-				<Box w="200px" h={'200px'} bg={'gray.800'}></Box>
+				<Image
+					src={'https://avatars.githubusercontent.com/u/36974713?v=4'}
+					width="300px"
+					height="250px"
+					alt="Image"
+				/>
 			</Center>
 		</SimpleGrid>
 	);

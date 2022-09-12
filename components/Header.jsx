@@ -15,9 +15,8 @@ const data = [
 
 export default function Header() {
 	return (
-		<chakra.header id="header" sx={{ position: '-webkit-sticky', /* Safari */ position: 'sticky', top: '0', }}>
+		<chakra.header id="header" sx={{ position: '-webkit-sticky', /* Safari */ position: 'sticky', top: '0', bgColor:'white', borderColor:'gray.300'}}>
 			<Flex w="100%" px="6" py="5" align="center" justify="space-between"  >
-				<Image src={Logo.src} h="50px" alt="logo" />
 				<HStack as="nav" spacing="5"  display={{ base: "none", md: "flex" }}>
 					{data.map((item, i) => (
 						<Link key={i} href={`/${item.href}`}>
@@ -37,7 +36,6 @@ export default function Header() {
 					))}
 				</HStack>
 				<HStack>
-					<Button borderRadius={0}>{CTA}</Button>
 					<MobileDrawer />
 				</HStack>
 			</Flex>
