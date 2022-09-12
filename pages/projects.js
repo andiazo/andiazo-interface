@@ -32,7 +32,7 @@ const projectsToSet = [
 	},
 ];
 
-const projects = () => {
+const Projects = () => {
 	const [projects, setProjects] = useState();
 
 	useEffect(() => {
@@ -74,4 +74,4 @@ const projects = () => {
 	);
 };
 
-export default projects;
+export default Projects;

@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 import styles from '../styles/Home.module.css';
 
-const blog = () => {
+const Blog = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -47,4 +47,4 @@ const blog = () => {
 	);
 };
 
-export default blog;
+export default Blog;

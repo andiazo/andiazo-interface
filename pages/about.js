@@ -8,7 +8,7 @@ import Card from '../components/Card';
 import styles from '../styles/Home.module.css';
 import EduCard from '../components/EduCard';
 
-const about = () => {
+const About = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -107,4 +107,4 @@ const about = () => {
 	);
 };
 
-export default about;
+export default About;
